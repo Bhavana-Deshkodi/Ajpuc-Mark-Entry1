@@ -1,23 +1,23 @@
 <?php 
 
 $servername1 = "localhost";
-$username1 = "kvgenggco_admin";
-$password1 = "Geleyageleya";  
-$dbname1='kvgenggco_csis';
+$username1 = "root";
+$password1 = "";  
+// $dbname1='kvgenggco_csis';
 $con = new mysqli($servername1, $username1, $password1, $dbname1);
 
  $output='';
       $output .= ' 
       <table>
         <tr>
-            <th> USN </th>
+            <th>USN</th>
             <th>Name</th>
             <th>SEM </th> 
             <th>student Phone</th>
             <th>Parent Phone</th>
         </tr> ';      
                                 $i=1;
-                                $sql = "SELECT * from students where sem<9 order by usn asc";
+                                $sql = "SELECT * from student where sem<9 order by usn asc";
                                 $result = $con->query($sql);
                               if(mysqli_num_rows($result) > 0)
                               {

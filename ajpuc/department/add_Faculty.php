@@ -91,6 +91,33 @@ extract($_REQUEST); ?>
 
                      <div class="form-group">
                         <div class="col-md-4 col-sm-4 col-sx-12">
+                           <label for="name" class="control-label">Address 1</label><span id="sp">:</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-sx-12">
+                           <input type="text" class="form-control" name="add1">
+                        </div>
+                     </div>
+
+                     <div class="form-group">
+                        <div class="col-md-4 col-sm-4 col-sx-12">
+                           <label for="name" class="control-label">Address 2</label><span id="sp">:</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-sx-12">
+                           <input type="text" class="form-control" name="add2">
+                        </div>
+                     </div>
+
+                     <div class="form-group">
+                        <div class="col-md-4 col-sm-4 col-sx-12">
+                           <label for="name" class="control-label">Pincode</label><span id="sp">:</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-sx-12">
+                           <input type="text" class="form-control" name="pincode">
+                        </div>
+                     </div>
+
+                     <div class="form-group">
+                        <div class="col-md-4 col-sm-4 col-sx-12">
                            <label for="name" class="control-label">Status</label><span id="sp">:</span>
                         </div>
                         <div class="col-md-6 col-sm-6 col-sx-12">
