@@ -36,7 +36,7 @@ extract($_REQUEST); ?>
                <div class="panel-body">
                   <form class="form-horizontal" role="form" method="post" action="saveFaculty.php" enctype="multipart/form-data">
 
-                     <!-- <div class="form-group">
+                     <div class="form-group">
                         <div class="col-md-4 col-sm-4 col-sx-12">
                            <label>Photo</label>
                         </div>
@@ -49,7 +49,7 @@ extract($_REQUEST); ?>
                               </div>
                            </div>
                         </div>
-                     </div> -->
+                     </div>
 
 
 
@@ -225,9 +225,9 @@ extract($_REQUEST); ?>
                         </div>
                      </div> -->
 
-                     
 
-                  
+
+
 
                      <!-- <div class="form-group">
                         <div class="col-md-4 col-sm-4 col-sx-12">
@@ -248,7 +248,7 @@ extract($_REQUEST); ?>
                      </div> -->
 
 
-                    
+
                      <br>
                      <div class="col-md-10 col-sm-10 col-sx-12">
                         <input id="submit" name="submit" type="submit" value="Add Faculties" class="btn btn-success pull-right">

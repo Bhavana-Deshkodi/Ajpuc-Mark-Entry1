@@ -51,7 +51,7 @@ extract($_REQUEST); ?>
                <div class="panel-body">
                   <form class="form-horizontal" role="form" method="post" action="saveStudent.php" enctype="multipart/form-data">
 
-                     <!-- <div class="form-group">
+                     <div class="form-group">
                         <div class="col-md-4 col-sm-4 col-sx-12">
                            <label>Photo</label>
                         </div>
@@ -64,7 +64,7 @@ extract($_REQUEST); ?>
                               </div>
                            </div>
                         </div>
-                     </div> -->
+                     </div>
 
 
 
@@ -306,6 +306,15 @@ extract($_REQUEST); ?>
                         </div>
                         <div class="col-md-6 col-sm-6 col-sx-12">
                            <input type="email" class="form-control" name="email">
+                        </div>
+                     </div>
+
+                     <div class="form-group">
+                        <div class="col-md-4 col-sm-4 col-sx-12">
+                           <label for="fcpass" class="control-label">Password</label><span id="sp">:</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-sx-12">
+                           <input type="password" minlength="5" class="form-control" name="fcpass" autocomplete="off" required>
                         </div>
                      </div>
 

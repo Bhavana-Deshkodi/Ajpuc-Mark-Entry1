@@ -10,11 +10,11 @@ $type = explode('.', $_FILES['userImage']['name']);
     // {
 
 
-$url = "../img/faculty/$url.$type";
+$url = "../img/faculty/$fnum.$type";
 
 move_uploaded_file($_FILES['userImage']['tmp_name'], $url);
 // if(empty($highqual)==''){
-$sql = "UPDATE faculty SET Fname='$fname',Email_ID='$fcemail',url='$url',Add_1='$faddl1',Add_2='$faddl2',Pincode='$fpinc',Phone_No='$fnum',password='$fcpass' where Fac_ID='$oldid'"; 
+$sql = "UPDATE faculty SET Fname='$fname',Lname='$lname',Gender='$gender',Email_ID='$fcemail',url='$url',Add_1='$faddl1',Add_2='$faddl2',Pincode='$fpinc',Phone_No='$fnum',password='$fcpass' where Fac_ID='$oldid'"; 
 // else if($highqual=='')
 // $sql = "UPDATE faculty SET name='$fname',Email_ID='$fcemail',url='$url',Add_1='$faddl1',Add_2='$faddl2',Pincode='$fpinc',Phone_No='$fnum',password='$fcpass' where Fac_ID='$oldid'"; 
 // } else

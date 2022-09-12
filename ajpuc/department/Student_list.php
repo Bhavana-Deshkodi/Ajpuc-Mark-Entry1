@@ -88,6 +88,8 @@ extract($_REQUEST); ?>
                         <th role="columnheader">Gender</th>
                         <th role="columnheader">Phone_No</th>
                         <th role="columnheader">Email_ID</th>
+                        <th role="columnheader">Password</th>
+
                         <th role="columnheader">Remarks</th>
                         <th role="columnheader">Reg_No</th>
                         <th role="columnheader">SATS_No</th>
@@ -116,6 +118,8 @@ extract($_REQUEST); ?>
                           <td role="cell"><?= $row['Gender']; ?></td>
                           <td role="cell"><?= $row['Phone_No']; ?></td>
                           <td role="cell"><?= $row['Email_ID']; ?></td>
+                          <td role="cell"><?= $row['password']; ?></td>
+
                           <td role="cell"><?= $row['Remarks']; ?></td>
                           <td role="cell"><?= $row['Reg_No']; ?></td>
                           <td role="cell"><?= $row['SATS_No']; ?></td>

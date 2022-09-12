@@ -12,8 +12,8 @@ include("dbconfig.php");
 //     $studnum=0;
 // }
 
-$sql = "INSERT INTO `student` (`Fname`, `Lname`, `Roll_No`, `DOB`, `Gender`, `SATS_No`,`Enroll_No`,`Reg_No`, `Address_1`, `Address_2`,`City`,`Pincode`,`Phone_No`, `Fathers_Name`, `Mothers_Name`, `Email_ID`) 
-                       VALUES ('$sname','$lname','$rollno','$dob','$Gender', '$satsno','$enrollno','$regno','$add1', '$add2', '$city', '$pincode', '$studnum', '$fatname', '$motname', '$email')";
+$sql = "INSERT INTO `student` (`Fname`, `Lname`, `Roll_No`, `DOB`, `Gender`, `SATS_No`,`Enroll_No`,`Reg_No`,`password`, `Address_1`, `Address_2`,`City`,`Pincode`,`Phone_No`, `Fathers_Name`, `Mothers_Name`, `Email_ID`) 
+                       VALUES ('$sname','$lname','$rollno','$dob','$Gender', '$satsno','$enrollno','$regno','$fcpass','$add1', '$add2', '$city', '$pincode', '$studnum', '$fatname', '$motname', '$email')";
 $result = $con->query($sql);
 
 

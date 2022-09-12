@@ -68,7 +68,7 @@ $row = $result->fetch_assoc();
 
                            <div class="kv-avatar center-block" style="width:200px">
                               <div class="file-loading">
-                                 <input id="avatar-2" name="userImage" type="file" class="file-loading">
+                                 <input id="avatar-2" name="userImage" type="file" class="file-loading" name="tmp_name">
                               </div>
                            </div>
                         </div>
@@ -77,10 +77,19 @@ $row = $result->fetch_assoc();
 
                      <div class="form-group">
                         <div class="col-md-4 col-sm-4 col-sx-12">
-                           <label for="name" class="control-label">Name </label><span id="sp">:</span>
+                           <label for="name" class="control-label">First Name </label><span id="sp">:</span>
                         </div>
                         <div class="col-md-6 col-sm-6 col-sx-12">
                            <input type="text" class="form-control" value="<?php echo $row['Fname']; ?>" name="fname" required>
+                        </div>
+                     </div>
+
+                     <div class="form-group">
+                        <div class="col-md-4 col-sm-4 col-sx-12">
+                           <label for="name" class="control-label">Last Name </label><span id="sp">:</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-sx-12">
+                           <input type="text" class="form-control" value="<?php echo $row['Lname']; ?>" name="lname" required>
                         </div>
                      </div>
 
@@ -102,6 +111,16 @@ $row = $result->fetch_assoc();
                            <input type="text" class="form-control" value="<?php echo $row['Add_2']; ?>" name="faddl2">
                         </div>
                      </div>
+
+                     <div class="form-group">
+                        <div class="col-md-4 col-sm-4 col-sx-12 row-4">
+                           <label for="name" class="control-label">Gender</label><span id="sp">:</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-sx-12">
+                           <input type="text" class="form-control" value="<?php echo $row['Gender']; ?>" name="gender">
+                        </div>
+                     </div>
+
                      <!-- <div class="form-group">
                         <div class="col-md-4 col-sm-4 col-sx-12 row-4">
                            <label for="name" class="control-label">Address Line 3 </label><span id="sp">:</span>
@@ -174,7 +193,7 @@ $row = $result->fetch_assoc();
                         </div>
                      </div>
 
-                     
+
 
                      <!-- <div class="form-group">
                         <div class="col-md-4 col-sm-4 col-sx-12">

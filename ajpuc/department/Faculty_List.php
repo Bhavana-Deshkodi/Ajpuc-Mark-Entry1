@@ -157,7 +157,7 @@ extract($_REQUEST); ?>
                                     } ?>
                                  </tbody>
                                  <tfoot>
-                                    <tr>
+                                    <!-- <tr>
                                        <th>Photo</th>
                                        <th>Name </th>
                                        <th>ContactNumber </th>
@@ -165,7 +165,7 @@ extract($_REQUEST); ?>
                                        <th>Email</th>
                                        <th>Designation</th>
                                        <th>Action</th>
-                                    </tr>
+                                    </tr> -->
                                  </tfoot>
                               </table>
                            </div>
